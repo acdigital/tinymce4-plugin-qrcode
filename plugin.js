@@ -6,7 +6,7 @@
  * Plugin info: http://www.cfconsultancy.nl/
  * Author: Ceasar Feijen
  *
- * Version: 1.0 released 15/09/2013
+ * Version: 1.1.1 released 2013-10-14
  */
 
 tinymce.PluginManager.add('qrcode', function(editor) {
