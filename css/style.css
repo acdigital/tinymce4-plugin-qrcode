@@ -39,3 +39,6 @@ a img {
 	font-size:10px;
 	float:right;
 }
+#adv {
+	display: none;
+}
