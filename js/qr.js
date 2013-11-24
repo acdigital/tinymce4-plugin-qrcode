@@ -27,8 +27,8 @@
 	        return false;
 
 	    } else {
-	        var imgdata = "<img src='http://api.qrserver.com/v1/create-qr-code/?data=" + encodeURIComponent(datainput) + "&qzone=" + q_zone + "&margin=" + margin + "&color=" + codecolor + "&bgcolor=" + bgcolor + "&size=" + size + "&charset-target=" + encoding + "&ecc=" + ecc + "&format=" + format +"' data-name='" + datainput + "' />"
-	        if( $("#image").is(':empty')) {
+	        var imgdata = "<img src='http://api.qrserver.com/v1/create-qr-code/?data=" + encodeURIComponent(datainput) + "&qzone=" + q_zone + "&margin=" + margin + "&color=" + codecolor + "&bgcolor=" + bgcolor + "&size=" + size + "&charset-target=" + encoding + "&ecc=" + ecc + "&format=" + format +"' data-name='" + datainput + "' />";
+	        if( $("#image").is(':empty') ) {
 	            $("#image").append(imgdata);
 	            $("#arrow").show();
 	            return false;
@@ -73,7 +73,7 @@
 
 	  $('#alert_placeholder').bind('closed.bs.alert', function () {
 	  	$("#generate").prop("disabled", false);
-	  })
+	  });
 
 		setTimeout(function() { // this will automatically close the alert and remove this if the users doesn't close it in 5 secs
 
@@ -97,7 +97,7 @@
         $('#bgColor').colorpicker({
             format: 'hex'
         });
-    }
+    };
     _createColorpickers();
 
     $('.bscp-destroy').click(function(e) {
@@ -109,20 +109,6 @@
         e.preventDefault();
         _createColorpickers();
     });
-    //creating the sliders for margin and quiet zone
-    $(".slider").each( function() { //iterate over each element with the slider class.
-        var slider_data = $(this).data(); //those elements *should* all have the data-* html 5 attributes for the slider setup.
-        $(this).slider({ //create the slider - using the slider data grabbed in the last step.
-            value:slider_data.slider_value,
-            min:slider_data.slider_min,
-            max:slider_data.slider_max,
-            step:slider_data.slider_step,
-            slide: function (event,ui) { //on UI update update the input item to the current slider value
-                $(slider_data.slider_input).val(ui.value);
-                }
-            });
-        $(slider_data.slider_input).val(slider_data.slider_value); //initial value set of the input element.
-    });
     //hide the advanced/extra options:
     $(".hideparent").each( function() {
         var hidedata = $(this).data();
@@ -132,4 +118,17 @@
     });
     $(".hideparent").click( function(e) {
         $($(this).data("hide_ref")).toggle();
+    });
+    //Sliders
+    $('#margin').slider
+    ({
+      formater: function(value) {
+        return value;
+      }
+    });
+    $('#q_zone').slider
+    ({
+      formater: function(value) {
+        return value;
+      }
     });
