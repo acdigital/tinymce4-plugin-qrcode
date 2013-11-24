@@ -1,7 +1,7 @@
-tinyMCE 4 plugin qrcode
+TinyMCE 4 plugin qrcode
 ======================
 
-A QRcode wizzard plugin for tinyMCE 4 ( Build with Bootstrap version 3 build 2 )
+A QRcode wizzard plugin for TinyMCE 4 ( Build with Bootstrap version 3 build 2 )
 
 ### installation
 
@@ -43,7 +43,7 @@ Or <b>TinyMCE 4 plugin Picasa - Google plus</b> album and images plugin
 
 Grab <a href="http://codecanyon.net/item/tinymce-4-plugin-picasagoogle-plus-images/5775497?ref=ceasar">here</a> and see the demo
 
-### Commercial use for the QRcode wizzard plugin for tinyMCE 4
+### Commercial use for the QRcode wizzard plugin for TinyMCE 4
 
 For <b>commercial use</b> you can buy an unlimited license for one product for 25,-- EURO (excl. VAT) (for example a cms)
 
