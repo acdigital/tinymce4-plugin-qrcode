@@ -37,6 +37,10 @@ Or my other tinyMCE 4 plugin 'TinyMCE 4 plugin Flickr image search and place'
 
 Grab that one <a href="http://codecanyon.net/item/tinymce-4-plugin-flickr-image-search-and-place/5703888?ref=ceasar">here</a>
 
+Or TinyMCE 4 plugin Picasa - Google plus album and images plugin
+
+Grab <a href="http://codecanyon.net/item/tinymce-4-plugin-picasagoogle-plus-images/5775497?ref=ceasar">here</a> and see the demo
+
 ### Commercial use
 
 For <b>commercial use</b> you can buy an unlimited license for one product for 25,-- EURO (excl. VAT) (for example a cms)
